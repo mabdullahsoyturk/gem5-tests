@@ -1,0 +1,11 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 15 2020 14:50:10
+gem5 started Mar 18 2020 16:32:56
+gem5 executing on muhammet, pid 6022
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.opt -re --outdir=/home/muhammet/Desktop/gem5/results/pr/17/4kB --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/se.py -c /home/muhammet/Desktop/gem5/gapbs/pr -o '-g 17' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Exiting @ tick 31791696000 because user interrupt received
