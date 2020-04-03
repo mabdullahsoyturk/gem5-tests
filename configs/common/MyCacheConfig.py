@@ -18,8 +18,28 @@ def config_cache(options, system):
     if options.l2cache:
         # Provide a clock for the L2 and the L1-to-L2 bus here as they are not connected 
         # using addTwoLevelCacheHierarchy. Use the same clock as the CPUs.
-        system.l2 = l2_cache_class(clk_domain=system.cpu_clk_domain, size=options.l2_size, assoc=options.l2_assoc, mshrs=options.l2_mshrs, write_buffers=options.l2_write_buffers)
-
+        replacement_policies = {
+            "FIFORP": FIFORP(),
+            "SecondChanceRP": SecondChanceRP(),
+            "LFURP": LFURP(),
+            "BIPRP": BIPRP(),
+            "LIPRP": LIPRP(),
+            "MRURP": MRURP(),
+            "RandomRP": RandomRP(),
+            "BRRIPRP": BRRIPRP(),
+            "RRIPRP": RRIPRP(),
+            "NRURP": NRURP(),
+            "TreePLRURP": TreePLRURP(),
+            "WeightedLRURP": WeightedLRURP()
+        }
+        l2_replacement_policy = None
+        if options.l2_replacement_policy != None:
+            l2_replacement_policy = replacement_policies[options.l2_replacement_policy] 
+            system.l2 = l2_cache_class(clk_domain=system.cpu_clk_domain, size=options.l2_size, assoc=options.l2_assoc, 
+                                    mshrs=options.l2_mshrs, write_buffers=options.l2_write_buffers, replacement_policy=l2_replacement_policy)
+        else:
+            system.l2 = l2_cache_class(clk_domain=system.cpu_clk_domain, size=options.l2_size, assoc=options.l2_assoc, 
+                                mshrs=options.l2_mshrs, write_buffers=options.l2_write_buffers)
         system.tol2bus = L2XBar(clk_domain = system.cpu_clk_domain)
         system.l2.cpu_side = system.tol2bus.master
         system.l2.mem_side = system.membus.slave
@@ -34,8 +54,8 @@ def config_cache(options, system):
 
     for i in range(options.num_cpus):
         if options.caches:
-            icache = icache_class(size=options.l1i_size, assoc=options.l1i_assoc, mshrs=options.l1i_mshrs, write_buffers=options.l1i_write_buffers)
-            dcache = dcache_class(size=options.l1d_size, assoc=options.l1d_assoc, mshrs=options.l1d_mshrs, write_buffers=options.l1d_write_buffers)
+            icache = icache_class(size=options.l1i_size, assoc=options.l1i_assoc, mshrs=options.l1i_mshrs, write_buffers=options.l1i_write_buffers, writeback_clean=True)
+            dcache = dcache_class(size=options.l1d_size, assoc=options.l1d_assoc, mshrs=options.l1d_mshrs, write_buffers=options.l1d_write_buffers, writeback_clean=True)
 
             # If we have a walker cache specified, instantiate two instances here
             iwalkcache, dwalkcache = None, None

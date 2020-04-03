@@ -4,10 +4,15 @@ import subprocess
 from shutil import rmtree
 import argparse
 
-kronecker_sizes = ["12","14", "16"]
+kronecker_sizes = ["16"]
 # kronecker_sizes = ["2","4","6"]
-l2_sizes = ["4kB", "16kB", "64kB", "256kB"]
-
+l2_sizes = ["4kB"]
+# l2_sizes = ["4kB", "16kB", "64kB", "256kB"]
+# l2_write_buffers = ["4", "8", "12", "16"]
+l2_assocs = ["4", "8", "12", "16"]
+l2_prefecthers = ["TaggedPrefetcher", "DCPTPrefetcher", "IndirectMemoryPrefetcher", "SignaturePathPrefetcher"]
+l2_replacement_policies = ["SecondChanceRP", "BIPRP", "LIPRP", "BRRIPRP"]
+    
 WHERE_AM_I = os.path.dirname(os.path.realpath(__file__)) #  Absolute Path to *THIS* Script
 BENCH_BIN_DIR = WHERE_AM_I + '/gapbs'
 BENCH_GRAPH_DIR = BENCH_BIN_DIR + "/test/graphs/"
@@ -78,9 +83,8 @@ def removeResultDirectories(bench_name):
             rmtree(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)
 
 def getBinaryOptions(args, kronecker_size):
-    print("Here is the optinos")
+    print("Here are the options")
     bench_binary_options = '"-f {}"'.format(BENCH_GRAPH_DIR + args.graph_name) if args.graph else '"-g {}"'.format(kronecker_size)
-    print(bench_binary_options)
     return bench_binary_options
 
 def get_arguments():
@@ -89,6 +93,13 @@ def get_arguments():
     parser.add_argument("--caches", action="store_true", default=True)
     parser.add_argument("--l2cache", action="store_true", default=True)
     parser.add_argument("--l2_size", default="64kB")
+    parser.add_argument("--l2_assoc", default="2")
+    parser.add_argument("--l1i_write_buffers", default="8")
+    parser.add_argument("--l1d_write_buffers", default="8")
+    parser.add_argument("--l2_write_buffers", default="8")
+    parser.add_argument("--l1i_mshrs", default="4")
+    parser.add_argument("--l1d_mshrs", default="4")
+    parser.add_argument("--l2_mshrs", default="20")
     parser.add_argument("--mem-size", default="512MB")
     parser.add_argument("--graph", action="store_true", default=False)
     parser.add_argument("--graph-name", default="4.mtx")

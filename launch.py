@@ -11,7 +11,7 @@ BENCH_INPUT_HOME = WHERE_AM_I + '/inputs'
 BENCH_BIN_HOME = WHERE_AM_I + '/gapbs'
 
 GEM5_BINARY = os.path.abspath(WHERE_AM_I + '/build/RISCV/gem5.fast')
-GEM5_SCRIPT = os.path.abspath(WHERE_AM_I + '/configs/example/se.py')
+GEM5_SCRIPT = os.path.abspath(WHERE_AM_I + '/configs/example/my_se.py')
 
 class ExperimentManager:
     # <gem5 bin> <gem5 options> <gem5 script> <gem5 script options>
@@ -34,9 +34,10 @@ class ExperimentManager:
         bench_binary_path = '-c ' + launch_utils.BENCH_BINARY[self.args.bench_name]
 
         bench_binary_options = '-o ' + launch_utils.getBinaryOptions(self.args, self.kronecker_size)
-        print(bench_binary_options)
         other_script_options = '--caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=' + self.args.mem_size
         other_script_options += ' --l2cache --l2_size=' + l2_size
+        other_script_options += ' --l1i_mshrs=' + self.args.l1i_mshrs + ' --l1d_mshrs=' + self.args.l1d_mshrs + ' --l2_mshrs={}'.format(self.args.l2_mshrs)
+        other_script_options += ' --l1i_write_buffers={} --l1d_write_buffers={} --l2_write_buffers={}'.format(self.args.l1i_write_buffers, self.args.l1d_write_buffers, self.args.l2_write_buffers)
 
         gem5_script_option = ' '.join([bench_binary_path, bench_binary_options, other_script_options])
 
