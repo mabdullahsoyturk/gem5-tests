@@ -4,12 +4,13 @@ import subprocess
 from shutil import rmtree
 import argparse
 
-kronecker_sizes = ["16"]
+kronecker_sizes = ["12","14","16"]
 # kronecker_sizes = ["2","4","6"]
 l2_sizes = ["4kB"]
 # l2_sizes = ["4kB", "16kB", "64kB", "256kB"]
-# l2_write_buffers = ["4", "8", "12", "16"]
-l2_assocs = ["4", "8", "12", "16"]
+l2_write_buffers = ["4", "8", "12", "16"]
+l2_mshrs = ["16", "20", "24", "28"]
+l2_assocs = ["4", "8", "16", "32"]
 l2_prefecthers = ["TaggedPrefetcher", "DCPTPrefetcher", "IndirectMemoryPrefetcher", "SignaturePathPrefetcher"]
 l2_replacement_policies = ["SecondChanceRP", "BIPRP", "LIPRP", "BRRIPRP"]
     

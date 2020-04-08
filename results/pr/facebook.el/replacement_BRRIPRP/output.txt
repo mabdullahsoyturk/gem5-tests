@@ -1,0 +1,47 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 27 2020 00:28:59
+gem5 started Apr  5 2020 02:52:42
+gem5 executing on muhammet, pid 9388
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/pr/facebook.el/replacement_BRRIPRP --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/pr -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/facebook.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-replacement-policy=BRRIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.07669
+Build Time:          0.00616
+Graph has 4039 nodes and 88234 directed edges for degree: 21
+  0    0.687542
+  1    0.329656
+  2    0.182135
+  3    0.110140
+  4    0.070741
+  5    0.044130
+  6    0.024926
+  7    0.012605
+  8    0.005807
+  9    0.002490
+ 10    0.001012
+ 11    0.000399
+ 12    0.000155
+ 13    0.000060
+Trial Time:          0.00302
+  0    0.687542
+  1    0.329656
+  2    0.182135
+  3    0.110140
+  4    0.070741
+  5    0.044130
+  6    0.024926
+  7    0.012605
+  8    0.005807
+  9    0.002490
+ 10    0.001012
+ 11    0.000399
+ 12    0.000155
+ 13    0.000060
+Trial Time:          0.00301
+  0    0.687542
+  1    0.329656
+  2    0.182135
+Exiting @ tick 18903437677047500 because user interrupt received

@@ -66,7 +66,7 @@ if __name__ == "__main__":
         experiment_manager = ExperimentManager(0,args)
         method_with_args = partial(run_experiment, experiment_manager=experiment_manager, args=args)
         with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
-            executor.map(method_with_args, launch_utils.l2_mshrs)
+            executor.map(method_with_args, launch_utils.l2_replacement_policies)
     else:
         for kronecker_size in launch_utils.kronecker_sizes:
             experiment_manager = ExperimentManager(kronecker_size, args)
