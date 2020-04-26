@@ -1,0 +1,47 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 27 2020 00:28:59
+gem5 started Apr 19 2020 02:59:25
+gem5 executing on muhammet, pid 18374
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/cc_sv/facebook.el/replacement_BIPRP --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/cc_sv -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/facebook.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-replacement-policy=BIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.74256
+Build Time:          0.09344
+Graph has 50515 nodes and 819090 directed edges for degree: 16
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03299
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03300
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03295
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03301
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03299
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03299
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03299
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03296
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03300
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03304
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Shiloach-Vishkin took 3 iterations
+Trial Time:          0.03298
+Average Time:        0.03299
+Exiting @ tick 1398686409000 because exiting with last active thread context

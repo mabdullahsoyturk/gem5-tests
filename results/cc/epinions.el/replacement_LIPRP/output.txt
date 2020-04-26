@@ -1,0 +1,47 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 27 2020 00:28:59
+gem5 started Apr 15 2020 20:01:05
+gem5 executing on muhammet, pid 27204
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/cc/epinions.el/replacement_LIPRP --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/cc -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/epinions.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-replacement-policy=LIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.50959
+Build Time:          0.05144
+Graph has 75888 nodes and 508837 directed edges for degree: 6
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00449
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00449
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00451
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00451
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00452
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00449
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00448
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00450
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00449
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00448
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00451
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00453
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00453
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00452
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00454
+Skipping largest intermediate component (ID: 0, approx. 76% of the graph)
+Trial Time:          0.00448
+Average Time:        0.00450
+Exiting @ tick 670158092500 because exiting with last active thread context

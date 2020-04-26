@@ -84,9 +84,15 @@ def removeResultDirectories(bench_name):
             rmtree(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)
 
 def getBinaryOptions(args, kronecker_size):
-    print("Here are the options")
     bench_binary_options = '"-f {}"'.format(BENCH_GRAPH_DIR + args.graph_name) if args.graph else '"-g {}"'.format(kronecker_size)
     return bench_binary_options
+
+def getOtherOptions(args):
+    constants = "--caches --l2cache --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4"
+    mem_size = "--mem-size={}".format(args.mem_size)
+    l2_size = "--l2_size={}".format(args.l2_size)
+    l2_mshrs = "--l2_mshrs={}".format(args.l2_mshrs)
+    l2_write_buffers = "--l2_write_buffers={}".format(args.l2_write_buffers)
 
 def get_arguments():
     parser = argparse.ArgumentParser()
@@ -101,6 +107,7 @@ def get_arguments():
     parser.add_argument("--l1i_mshrs", default="4")
     parser.add_argument("--l1d_mshrs", default="4")
     parser.add_argument("--l2_mshrs", default="20")
+    parser.add_argument("--l2_replacement", default="BRRIPRP")
     parser.add_argument("--mem-size", default="512MB")
     parser.add_argument("--graph", action="store_true", default=False)
     parser.add_argument("--graph-name", default="4.mtx")
