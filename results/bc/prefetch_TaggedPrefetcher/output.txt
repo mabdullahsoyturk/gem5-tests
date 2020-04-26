@@ -1,0 +1,96 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 27 2020 00:28:59
+gem5 started Apr 12 2020 04:37:54
+gem5 executing on muhammet, pid 22618
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/bc/slashdot.el/prefetch_TaggedPrefetcher --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/bc -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/slashdot.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=TaggedPrefetcher --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+Warning: l2-hwp-type is set ( TaggedPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.81986
+Build Time:          0.08971
+Graph has 77360 nodes and 828161 directed edges for degree: 10
+    a                0.00007
+source: 15461
+    b                0.02059
+    p                0.00739
+Trial Time:          0.02860
+    a                0.00007
+source: 1347
+    b                0.01847
+    p                0.00596
+Trial Time:          0.02506
+    a                0.00007
+source: 20945
+    b                0.02200
+    p                0.00773
+Trial Time:          0.03035
+    a                0.00007
+source: 21436
+    b                0.02220
+    p                0.00766
+Trial Time:          0.03048
+    a                0.00007
+source: 31632
+    b                0.01936
+    p                0.00672
+Trial Time:          0.02670
+    a                0.00007
+source: 71728
+    b                0.02034
+    p                0.00713
+Trial Time:          0.02809
+    a                0.00007
+source: 18442
+    b                0.02020
+    p                0.00706
+Trial Time:          0.02788
+    a                0.00007
+source: 39870
+    b                0.02155
+    p                0.00773
+Trial Time:          0.02989
+    a                0.00007
+source: 65816
+    b                0.02200
+    p                0.00769
+Trial Time:          0.03030
+    a                0.00007
+source: 13597
+    b                0.01936
+    p                0.00681
+Trial Time:          0.02679
+    a                0.00007
+source: 8623
+    b                0.02176
+    p                0.00759
+Trial Time:          0.02997
+    a                0.00007
+source: 71206
+    b                0.02213
+    p                0.00772
+Trial Time:          0.03046
+    a                0.00007
+source: 62693
+    b                0.02026
+    p                0.00686
+Trial Time:          0.02774
+    a                0.00007
+source: 7611
+    b                0.02057
+    p                0.00711
+Trial Time:          0.02830
+    a                0.00007
+source: 61632
+    b                0.01915
+    p                0.00669
+Trial Time:          0.02646
+    a                0.00007
+source: 25015
+    b                0.02180
+    p                0.00771
+Trial Time:          0.03013
+Average Time:        0.02858
+Exiting @ tick 1413062270000 because exiting with last active thread context

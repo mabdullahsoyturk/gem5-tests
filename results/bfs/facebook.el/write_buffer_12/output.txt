@@ -1,0 +1,251 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 27 2020 00:28:59
+gem5 started Apr 20 2020 07:29:17
+gem5 executing on muhammet, pid 26975
+command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/bfs/facebook.el/write_buffer_12 --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/bfs -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/facebook.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=12
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.66080
+Build Time:          0.09460
+Graph has 50515 nodes and 819090 directed edges for degree: 16
+Source:                10096
+    i                0.00016
+   td         14     0.00002
+   td        481     0.00004
+   td       5851     0.00040
+    e                0.00006
+   bu      11567     0.00159
+   bu       5235     0.00090
+   bu       1694     0.00070
+    c                0.00009
+   td        557     0.00023
+   td        227     0.00010
+   td         69     0.00005
+   td         18     0.00002
+   td          8     0.00002
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00482
+Source:                  879
+    i                0.00016
+   td          4     0.00001
+   td         29     0.00001
+   td        724     0.00006
+   td       4060     0.00025
+   td       4640     0.00048
+   td       2348     0.00052
+   td       1201     0.00029
+   td        620     0.00016
+   td        227     0.00007
+   td        111     0.00005
+   td         55     0.00003
+   td         38     0.00002
+   td         19     0.00002
+   td         12     0.00002
+   td          8     0.00002
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.00267
+Source:                13677
+    i                0.00016
+   td          1     0.00001
+   td         24     0.00002
+   td       1008     0.00006
+   td       3887     0.00026
+   td       4532     0.00056
+   td       2265     0.00045
+   td        859     0.00023
+   td        267     0.00009
+   td         56     0.00003
+   td         17     0.00002
+   td          3     0.00001
+   td          0     0.00001
+Trial Time:          0.00228
+Source:                13997
+    i                0.00016
+   td         21     0.00002
+   td        247     0.00003
+   td       1861     0.00012
+   td       6936     0.00045
+    e                0.00007
+   bu       7044     0.00148
+   bu       3236     0.00103
+   bu       1273     0.00088
+    c                0.00009
+   td        386     0.00018
+   td         99     0.00005
+   td         29     0.00002
+   td          5     0.00002
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00505
+Source:                20655
+    i                0.00016
+   td         16     0.00002
+   td        567     0.00004
+   td       3457     0.00028
+   td       6507     0.00067
+    e                0.00007
+   bu       3931     0.00138
+   bu       1378     0.00117
+    c                0.00009
+   td        339     0.00017
+   td        112     0.00004
+   td         28     0.00002
+   td          7     0.00002
+   td          2     0.00001
+   td          2     0.00001
+   td          4     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00465
+Source:                12042
+    i                0.00016
+   td          2     0.00001
+   td          7     0.00001
+   td          9     0.00002
+   td         36     0.00001
+   td         42     0.00002
+   td         35     0.00002
+   td         22     0.00002
+   td         27     0.00002
+   td         11     0.00001
+   td          5     0.00001
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.00071
+Source:                26035
+    i                0.00016
+   td          9     0.00002
+   td        118     0.00002
+   td       1010     0.00006
+   td       2819     0.00020
+   td       1821     0.00023
+   td        874     0.00017
+   td        403     0.00008
+   td        150     0.00004
+   td         43     0.00002
+   td         14     0.00002
+   td          3     0.00001
+   td          0     0.00001
+Trial Time:          0.00141
+Source:                42977
+    i                0.00016
+   td          1     0.00001
+   td          1     0.00001
+   td         62     0.00002
+   td        120     0.00002
+   td         53     0.00002
+   td         26     0.00002
+   td          4     0.00001
+   td          0     0.00001
+Trial Time:          0.00058
+Source:                 8878
+    i                0.00016
+   td          8     0.00001
+   td        576     0.00005
+   td       5781     0.00058
+    e                0.00006
+   bu      10780     0.00151
+   bu       7091     0.00091
+   bu       2416     0.00065
+    c                0.00009
+   td        711     0.00035
+   td        273     0.00012
+   td        115     0.00005
+   td         46     0.00003
+   td          7     0.00002
+   td          4     0.00001
+   td          0     0.00001
+Trial Time:          0.00504
+Source:                40937
+    i                0.00016
+   td          1     0.00001
+   td          3     0.00001
+   td          0     0.00001
+Trial Time:          0.00039
+Source:                 4970
+    i                0.00016
+   td         14     0.00002
+   td       1316     0.00010
+    e                0.00002
+   bu      10694     0.00190
+   bu      12861     0.00109
+   bu       4062     0.00062
+   bu       1016     0.00048
+    c                0.00008
+   td        355     0.00016
+   td        263     0.00009
+   td        160     0.00007
+   td         89     0.00004
+   td         17     0.00002
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.00530
+Source:                40245
+    i                0.00016
+   td          3     0.00001
+   td          7     0.00001
+   td         23     0.00001
+   td        134     0.00003
+   td        464     0.00005
+   td        538     0.00006
+   td        283     0.00004
+   td         83     0.00002
+   td         17     0.00002
+   td          9     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00083
+Source:                16334
+    i                0.00016
+   td         10     0.00002
+   td        127     0.00003
+   td       2160     0.00014
+   td       5261     0.00038
+   td       3130     0.00052
+   td       1024     0.00027
+   td        301     0.00008
+   td        110     0.00005
+   td         38     0.00003
+   td          8     0.00002
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00207
+Source:                28354
+    i                0.00016
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00036
+Source:                   63
+    i                0.00016
+   td         26     0.00002
+   td        987     0.00006
+   td       8712     0.00063
+    e                0.00009
+   bu      13931     0.00124
+   bu       5945     0.00067
+   bu       1963     0.00048
+    c                0.00009
+   td        720     0.00038
+   td        248     0.00016
+   td         94     0.00005
+   td         40     0.00003
+   td          5     0.00002
+   td          0     0.00001
+Trial Time:          0.00448
+Source:                39157
+    i                0.00016
+   td          1     0.00001
+   td          2     0.00001
+   td          3     0.00001
+   td          5     0.00001
+   td          2     0.00001
+   td          3     0.00001
+   td          0     0.00001
+Trial Time:          0.00052
+Average Time:        0.00257
+Exiting @ tick 830968937000 because exiting with last active thread context
