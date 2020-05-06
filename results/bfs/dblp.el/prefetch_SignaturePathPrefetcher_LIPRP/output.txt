@@ -1,31 +1,34 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/bfs/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/bfs/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP/error.txt
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Mar 27 2020 00:28:59
-gem5 started Apr 25 2020 04:19:53
-gem5 executing on muhammet, pid 6534
-command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/bfs/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/bfs -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=LIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  4 2020 02:16:43
+gem5 executing on draco, pid 29205
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/bfs/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/bfs -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=LIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
 
+info: Standard input is not a terminal, disabling listeners.
 Warning: l2-hwp-type is set ( SignaturePathPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
 Global frequency set at 1000000000000 ticks per second
 **** REAL SIMULATION ****
-Read Time:           0.95247
-Build Time:          0.13063
+Read Time:           0.99030
+Build Time:          0.21925
 Graph has 425957 nodes and 1049866 directed edges for degree: 2
 Source:                85136
-    i                0.00161
+    i                0.00295
    td          4     0.00002
    td         36     0.00002
    td         85     0.00002
    td        111     0.00002
    td        182     0.00003
-   td        235     0.00003
-   td        382     0.00004
-   td        442     0.00005
-   td        580     0.00005
-   td        572     0.00006
-   td        380     0.00005
-   td        256     0.00004
+   td        235     0.00004
+   td        382     0.00005
+   td        442     0.00006
+   td        580     0.00007
+   td        572     0.00008
+   td        380     0.00007
+   td        256     0.00005
    td        116     0.00003
    td         56     0.00002
    td         53     0.00002
@@ -36,91 +39,91 @@ Source:                85136
    td          1     0.00001
    td          4     0.00001
    td          0     0.00001
-Trial Time:          0.00356
+Trial Time:          0.00568
 Source:               174172
-    i                0.00161
-   td          1     0.00002
-   td          0     0.00001
-Trial Time:          0.00263
-Source:               394951
-    i                0.00162
+    i                0.00293
    td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00264
+Trial Time:          0.00462
+Source:               394951
+    i                0.00287
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.00456
 Source:               101549
-    i                0.00158
-   td          8     0.00002
+    i                0.00294
+   td          8     0.00001
    td          4     0.00001
    td          0     0.00001
-Trial Time:          0.00264
+Trial Time:          0.00461
 Source:               362397
-    i                0.00161
-   td          1     0.00002
+    i                0.00293
+   td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00263
+Trial Time:          0.00462
 Source:                74869
-    i                0.00159
+    i                0.00293
    td          2     0.00001
    td         64     0.00002
-   td        293     0.00003
-   td        794     0.00006
-   td       1779     0.00012
-   td       3336     0.00020
-   td       5365     0.00034
-   td       6798     0.00045
-   td       6435     0.00044
-   td       4602     0.00038
-   td       2752     0.00024
-   td       1503     0.00014
-   td        771     0.00008
-   td        344     0.00004
-   td        163     0.00003
-   td        116     0.00002
+   td        293     0.00004
+   td        794     0.00009
+   td       1779     0.00021
+   td       3336     0.00032
+   td       5365     0.00054
+   td       6798     0.00069
+   td       6435     0.00075
+   td       4602     0.00060
+   td       2752     0.00038
+   td       1503     0.00022
+   td        771     0.00012
+   td        344     0.00007
+   td        163     0.00004
+   td        116     0.00003
    td         34     0.00002
    td         21     0.00002
-   td          4     0.00002
+   td          4     0.00001
    td          9     0.00001
    td          2     0.00001
    td          4     0.00001
    td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00570
+Trial Time:          0.00915
 Source:               330191
-    i                0.00159
+    i                0.00292
    td          1     0.00001
    td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00265
+Trial Time:          0.00463
 Source:               133608
-    i                0.00161
-   td          1     0.00002
+    i                0.00289
+   td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00263
+Trial Time:          0.00458
 Source:               170715
-    i                0.00160
-   td          1     0.00002
+    i                0.00288
+   td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00264
+Trial Time:          0.00452
 Source:                44340
-    i                0.00158
-   td          2     0.00002
+    i                0.00287
+   td          2     0.00001
    td         15     0.00002
    td         71     0.00002
-   td        130     0.00002
-   td        312     0.00004
-   td        592     0.00005
-   td       1253     0.00008
-   td       2241     0.00014
-   td       3594     0.00023
-   td       3730     0.00030
-   td       2896     0.00023
-   td       2393     0.00022
-   td       2067     0.00021
-   td       1594     0.00015
-   td       1225     0.00010
-   td        819     0.00008
-   td        549     0.00006
-   td        251     0.00004
+   td        130     0.00003
+   td        312     0.00005
+   td        592     0.00007
+   td       1253     0.00014
+   td       2241     0.00024
+   td       3594     0.00036
+   td       3730     0.00045
+   td       2896     0.00037
+   td       2393     0.00031
+   td       2067     0.00028
+   td       1594     0.00023
+   td       1225     0.00017
+   td        819     0.00011
+   td        549     0.00009
+   td        251     0.00006
    td         94     0.00003
    td         48     0.00002
    td         23     0.00002
@@ -128,15 +131,15 @@ Source:                44340
    td         18     0.00002
    td          4     0.00001
    td          0     0.00001
-Trial Time:          0.00511
+Trial Time:          0.00798
 Source:               221784
-    i                0.00160
+    i                0.00288
    td          3     0.00001
    td          0     0.00001
-Trial Time:          0.00261
+Trial Time:          0.00453
 Source:                88856
-    i                0.00157
-   td          7     0.00002
+    i                0.00290
+   td          7     0.00001
    td         22     0.00002
    td         29     0.00002
    td         57     0.00002
@@ -147,26 +150,26 @@ Source:                88856
    td         31     0.00002
    td         10     0.00001
    td          0     0.00001
-Trial Time:          0.00291
+Trial Time:          0.00487
 Source:               388999
-    i                0.00157
+    i                0.00289
    td          4     0.00001
    td          0     0.00001
-Trial Time:          0.00259
+Trial Time:          0.00456
 Source:                19623
-    i                0.00160
+    i                0.00288
    td          1     0.00001
    td          0     0.00001
-Trial Time:          0.00263
+Trial Time:          0.00454
 Source:               338711
-    i                0.00161
-   td          2     0.00002
-   td          0     0.00002
-Trial Time:          0.00263
-Source:               379423
-    i                0.00163
+    i                0.00289
    td          2     0.00001
    td          0     0.00001
-Trial Time:          0.00265
-Average Time:        0.00305
-Exiting @ tick 1187342718000 because exiting with last active thread context
+Trial Time:          0.00456
+Source:               379423
+    i                0.00295
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.00469
+Average Time:        0.00517
+Exiting @ tick 1386509429000 because exiting with last active thread context

@@ -1,15 +1,18 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/pr/epinions.el/4kB/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/pr/epinions.el/4kB/error.txt
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Mar 27 2020 00:28:59
-gem5 started Apr  5 2020 12:46:05
-gem5 executing on muhammet, pid 14495
-command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/pr/epinions.el/4kB --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/pr -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/epinions.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  4 2020 02:26:45
+gem5 executing on draco, pid 30068
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/pr/epinions.el/4kB --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/pr -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/epinions.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
 
+info: Standard input is not a terminal, disabling listeners.
 Global frequency set at 1000000000000 ticks per second
 **** REAL SIMULATION ****
-Read Time:           0.44874
-Build Time:          0.05303
+Read Time:           0.44802
+Build Time:          0.09170
 Graph has 75888 nodes and 508837 directed edges for degree: 6
   0    1.021361
   1    0.345784
@@ -31,7 +34,7 @@ Graph has 75888 nodes and 508837 directed edges for degree: 6
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
+Trial Time:          0.10891
   0    1.021361
   1    0.345784
   2    0.123469
@@ -52,7 +55,7 @@ Trial Time:          0.06713
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -73,7 +76,7 @@ Trial Time:          0.06713
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06714
+Trial Time:          0.10889
   0    1.021361
   1    0.345784
   2    0.123469
@@ -94,7 +97,7 @@ Trial Time:          0.06714
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06712
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -115,7 +118,7 @@ Trial Time:          0.06712
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06712
+Trial Time:          0.10892
   0    1.021361
   1    0.345784
   2    0.123469
@@ -136,7 +139,7 @@ Trial Time:          0.06712
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06714
+Trial Time:          0.10895
   0    1.021361
   1    0.345784
   2    0.123469
@@ -157,7 +160,7 @@ Trial Time:          0.06714
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06712
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -178,7 +181,7 @@ Trial Time:          0.06712
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06714
+Trial Time:          0.10892
   0    1.021361
   1    0.345784
   2    0.123469
@@ -199,7 +202,7 @@ Trial Time:          0.06714
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06712
+Trial Time:          0.10888
   0    1.021361
   1    0.345784
   2    0.123469
@@ -220,7 +223,7 @@ Trial Time:          0.06712
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -241,7 +244,7 @@ Trial Time:          0.06713
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06714
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -262,7 +265,7 @@ Trial Time:          0.06714
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06714
+Trial Time:          0.10893
   0    1.021361
   1    0.345784
   2    0.123469
@@ -283,7 +286,7 @@ Trial Time:          0.06714
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06712
+Trial Time:          0.10891
   0    1.021361
   1    0.345784
   2    0.123469
@@ -304,7 +307,7 @@ Trial Time:          0.06712
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
+Trial Time:          0.10890
   0    1.021361
   1    0.345784
   2    0.123469
@@ -325,7 +328,7 @@ Trial Time:          0.06713
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
+Trial Time:          0.10892
   0    1.021361
   1    0.345784
   2    0.123469
@@ -346,6 +349,6 @@ Trial Time:          0.06713
  17    0.000851
  18    0.000710
  19    0.000594
-Trial Time:          0.06713
-Average Time:        0.06713
-Exiting @ tick 1611666123000 because exiting with last active thread context
+Trial Time:          0.10891
+Average Time:        0.10892
+Exiting @ tick 2325589082500 because exiting with last active thread context

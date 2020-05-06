@@ -59,7 +59,7 @@
                 "app_path": "/proc", 
                 "name": "redirect_paths0", 
                 "host_paths": [
-                    "/home/muhammet/Desktop/gem5/results/bfs/dblp.el/4kB/fs/proc"
+                    "/vol1/msoyturk/gem5/results/bfs/dblp.el/4kB/fs/proc"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -70,7 +70,7 @@
                 "app_path": "/sys", 
                 "name": "redirect_paths1", 
                 "host_paths": [
-                    "/home/muhammet/Desktop/gem5/results/bfs/dblp.el/4kB/fs/sys"
+                    "/vol1/msoyturk/gem5/results/bfs/dblp.el/4kB/fs/sys"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -81,7 +81,7 @@
                 "app_path": "/tmp", 
                 "name": "redirect_paths2", 
                 "host_paths": [
-                    "/home/muhammet/Desktop/gem5/results/bfs/dblp.el/4kB/fs/tmp"
+                    "/vol1/msoyturk/gem5/results/bfs/dblp.el/4kB/fs/tmp"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -258,7 +258,7 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
-                        "executable": "/home/muhammet/Desktop/gem5/gapbs/bfs", 
+                        "executable": "/vol1/msoyturk/gem5/gapbs/bfs", 
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -267,7 +267,7 @@
                         "maxStackSize": 67108864, 
                         "ppid": 0, 
                         "type": "Process", 
-                        "cwd": "/home/muhammet/Desktop/gem5", 
+                        "cwd": "/vol1/msoyturk/gem5", 
                         "pgid": 100, 
                         "simpoint": 0, 
                         "euid": 100, 
@@ -275,9 +275,9 @@
                         "path": "system.cpu0.workload", 
                         "name": "workload", 
                         "cmd": [
-                            "/home/muhammet/Desktop/gem5/gapbs/bfs", 
+                            "/vol1/msoyturk/gem5/gapbs/bfs", 
                             "-f", 
-                            "/home/muhammet/Desktop/gem5/gapbs/test/graphs/dblp.el"
+                            "/vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
