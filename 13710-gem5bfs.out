@@ -1,0 +1,13 @@
+Running gem5 command...
+Pzt May  4 02:21:46 +03 2020
+Creating result directories
+Working command: 
+
+/vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/bfs/dblp.el/4kB --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/bfs -o "-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el" --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+
+Started with l2cache: 4kB 
+Finished with l2cache: 4kB 
+Pzt May  4 09:42:36 +03 2020
+
+Solver exited with return code: 0

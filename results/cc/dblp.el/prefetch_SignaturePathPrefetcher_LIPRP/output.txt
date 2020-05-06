@@ -1,43 +1,51 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP/error.txt
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Mar 27 2020 00:28:59
-gem5 started Apr 26 2020 03:13:49
-gem5 executing on muhammet, pid 11096
-command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/cc/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/cc -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=LIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  3 2020 03:34:18
+gem5 executing on draco, pid 15944
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_SignaturePathPrefetcher_LIPRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/cc -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=LIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
 
+info: Standard input is not a terminal, disabling listeners.
 Warning: l2-hwp-type is set ( SignaturePathPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
 Global frequency set at 1000000000000 ticks per second
 **** REAL SIMULATION ****
-Read Time:           1.09316
-Build Time:          0.12978
+Read Time:           1.19974
+Build Time:          0.21969
 Graph has 425957 nodes and 1049866 directed edges for degree: 2
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04442
+Trial Time:          0.07402
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04457
+Trial Time:          0.07397
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04469
+Trial Time:          0.07422
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04473
+Trial Time:          0.07435
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04475
+Trial Time:          0.07437
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04467
+Trial Time:          0.07423
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04489
+Trial Time:          0.07413
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04461
+Trial Time:          0.07406
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04471
+Trial Time:          0.07412
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04478
+Trial Time:          0.07429
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04465
+Trial Time:          0.07429
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04470
+Trial Time:          0.07378
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04469
+Trial Time:          0.07371
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.04467
+Trial Time:          0.07402
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.07418
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.07402
+Average Time:        0.07411
+Exiting @ tick 2701901957500 because exiting with last active thread context
