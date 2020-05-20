@@ -6,10 +6,6 @@ from .Caches import *
 from common import ObjectList
 
 def config_cache(options, system):
-    if options.external_memory_system and (options.caches or options.l2cache):
-        print("External caches and internal caches are exclusive options.\n")
-        sys.exit(1)
-
     dcache_class, icache_class, l2_cache_class, walk_cache_class = L1_DCache, L1_ICache, L2Cache, None
 
     # Set the cache line size of the system

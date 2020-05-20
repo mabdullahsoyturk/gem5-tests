@@ -31,7 +31,7 @@ def get_processes(options):
 
     multiprocesses.append(process)
 
-    return multiprocesses, 1
+    return multiprocesses
 
 parser = optparse.OptionParser()
 MyOptions.addCommonOptions(parser)
@@ -44,17 +44,16 @@ if args:
     sys.exit(1)
 
 multiprocesses = []
-numThreads = 1
 
 if options.cmd:
-    multiprocesses, numThreads = get_processes(options)
+    multiprocesses = get_processes(options)
 else:
     print("No workload specified. Exiting!\n", file=sys.stderr)
     sys.exit(1)
 
 
 (CPUClass, test_mem_mode, FutureClass) = Simulation.setCPUClass(options)
-CPUClass.numThreads = numThreads
+CPUClass.numThreads = 1
 
 np = options.num_cpus
 system = System(cpu = [CPUClass(cpu_id=i) for i in range(np)], mem_mode = test_mem_mode,

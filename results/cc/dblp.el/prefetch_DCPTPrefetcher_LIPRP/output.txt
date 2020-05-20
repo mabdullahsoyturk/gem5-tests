@@ -43,3 +43,6 @@ Trial Time:          0.04011
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
 Trial Time:          0.04017
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.04014
+Average Time:        0.04008
+Exiting @ tick 2562626146500 because exiting with last active thread context
