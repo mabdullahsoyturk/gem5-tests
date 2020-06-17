@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
@@ -46,3 +47,56 @@ Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
 Trial Time:          0.03964
 Average Time:        0.03965
 Exiting @ tick 1812845242000 because exiting with last active thread context
+=======
+Redirecting stdout to /vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  3 2020 03:34:21
+gem5 executing on draco, pid 15995
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/cc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/cc -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=DCPTPrefetcher --l2-replacement-policy=SecondChanceRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( DCPTPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           1.00002
+Build Time:          0.20512
+Graph has 425957 nodes and 1049866 directed edges for degree: 2
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06809
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06822
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06826
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06821
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06822
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06821
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06826
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06828
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06825
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06821
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06826
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06821
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06822
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06824
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06823
+Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
+Trial Time:          0.06826
+Average Time:        0.06823
+Exiting @ tick 2383325724000 because exiting with last active thread context
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93

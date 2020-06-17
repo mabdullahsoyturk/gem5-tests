@@ -1,0 +1,99 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/bc/epinions.el/prefetch_SignaturePathPrefetcher_SecondChanceRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/bc/epinions.el/prefetch_SignaturePathPrefetcher_SecondChanceRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started Apr 27 2020 17:48:59
+gem5 executing on draco, pid 21290
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/bc/epinions.el/prefetch_SignaturePathPrefetcher_SecondChanceRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/bc -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/epinions.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=SecondChanceRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( SignaturePathPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.44806
+Build Time:          0.08356
+Graph has 75888 nodes and 508837 directed edges for degree: 6
+    a                0.00009
+source: 15167
+    b                0.01615
+    p                0.00597
+Trial Time:          0.02319
+    a                0.00009
+source: 66430
+    b                0.01650
+    p                0.00611
+Trial Time:          0.02367
+    a                0.00009
+source: 1321
+    b                0.01671
+    p                0.00616
+Trial Time:          0.02393
+    a                0.00009
+source: 20546
+    b                0.01624
+    p                0.00602
+Trial Time:          0.02332
+    a                0.00009
+source: 31030
+    b                0.00021
+    p                0.00005
+Trial Time:          0.00132
+    a                0.00009
+source: 70363
+    b                0.00018
+    p                0.00002
+Trial Time:          0.00126
+    a                0.00010
+source: 18091
+    b                0.01652
+    p                0.00605
+Trial Time:          0.02363
+    a                0.00009
+source: 39112
+    b                0.01680
+    p                0.00625
+Trial Time:          0.02411
+    a                0.00009
+source: 64563
+    b                0.01690
+    p                0.00622
+Trial Time:          0.02418
+    a                0.00009
+source: 8459
+    b                0.01630
+    p                0.00601
+Trial Time:          0.02337
+    a                0.00009
+source: 61500
+    b                0.01668
+    p                0.00621
+Trial Time:          0.02395
+    a                0.00009
+source: 24539
+    b                0.01709
+    p                0.00628
+Trial Time:          0.02443
+    a                0.00009
+source: 42596
+    b                0.01694
+    p                0.00623
+Trial Time:          0.02423
+    a                0.00009
+source: 96
+    b                0.01606
+    p                0.00601
+Trial Time:          0.02312
+    a                0.00009
+source: 23803
+    b                0.01667
+    p                0.00622
+Trial Time:          0.02395
+    a                0.00009
+source: 24346
+    b                0.01659
+    p                0.00617
+Trial Time:          0.02382
+Average Time:        0.02097
+Exiting @ tick 905674385000 because exiting with last active thread context

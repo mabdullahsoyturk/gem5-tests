@@ -59,7 +59,11 @@
                 "app_path": "/proc", 
                 "name": "redirect_paths0", 
                 "host_paths": [
+<<<<<<< HEAD
                     "/home/muhammet/Desktop/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/proc"
+=======
+                    "/vol1/msoyturk/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/proc"
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -70,7 +74,11 @@
                 "app_path": "/sys", 
                 "name": "redirect_paths1", 
                 "host_paths": [
+<<<<<<< HEAD
                     "/home/muhammet/Desktop/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/sys"
+=======
+                    "/vol1/msoyturk/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/sys"
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -81,7 +89,11 @@
                 "app_path": "/tmp", 
                 "name": "redirect_paths2", 
                 "host_paths": [
+<<<<<<< HEAD
                     "/home/muhammet/Desktop/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/tmp"
+=======
+                    "/vol1/msoyturk/gem5/results/bfs/epinions.el/prefetch_SignaturePathPrefetcher_BRRIPRP/fs/tmp"
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -258,7 +270,11 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
+<<<<<<< HEAD
                         "executable": "/home/muhammet/Desktop/gem5/gapbs/bfs", 
+=======
+                        "executable": "/vol1/msoyturk/gem5/gapbs/bfs", 
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -267,7 +283,11 @@
                         "maxStackSize": 67108864, 
                         "ppid": 0, 
                         "type": "Process", 
+<<<<<<< HEAD
                         "cwd": "/home/muhammet/Desktop/gem5", 
+=======
+                        "cwd": "/vol1/msoyturk/gem5", 
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                         "pgid": 100, 
                         "simpoint": 0, 
                         "euid": 100, 
@@ -275,9 +295,15 @@
                         "path": "system.cpu0.workload", 
                         "name": "workload", 
                         "cmd": [
+<<<<<<< HEAD
                             "/home/muhammet/Desktop/gem5/gapbs/bfs", 
                             "-f", 
                             "/home/muhammet/Desktop/gem5/gapbs/test/graphs/epinions.el"
+=======
+                            "/vol1/msoyturk/gem5/gapbs/bfs", 
+                            "-f", 
+                            "/vol1/msoyturk/gem5/gapbs/test/graphs/epinions.el"
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
@@ -23,10 +24,41 @@ Source:                39292
    bu       2989     0.00022
     c                0.00029
    td        450     0.00008
+=======
+Redirecting stdout to /vol1/msoyturk/gem5/results/bfs/gowalla.el/prefetch_SignaturePathPrefetcher_SecondChanceRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/bfs/gowalla.el/prefetch_SignaturePathPrefetcher_SecondChanceRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  4 2020 18:53:16
+gem5 executing on draco, pid 11370
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/bfs/gowalla.el/prefetch_SignaturePathPrefetcher_SecondChanceRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/bfs -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/gowalla.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=SecondChanceRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( SignaturePathPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           1.56226
+Build Time:          0.29839
+Graph has 196591 nodes and 1900654 directed edges for degree: 9
+Source:                39292
+    i                0.00060
+   td         37     0.00002
+   td      15618     0.00086
+    e                0.00024
+   bu      85571     0.00583
+   bu      72745     0.00254
+   bu      19085     0.00080
+   bu       2989     0.00037
+    c                0.00054
+   td        450     0.00011
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
    td         74     0.00002
    td         20     0.00001
    td          1     0.00001
    td          0     0.00001
+<<<<<<< HEAD
 Trial Time:          0.00843
 Source:               172091
     i                0.00042
@@ -41,10 +73,27 @@ Source:               172091
     c                0.00038
    td       1517     0.00023
    td        240     0.00004
+=======
+Trial Time:          0.01246
+Source:               172091
+    i                0.00060
+   td          5     0.00001
+   td         28     0.00001
+   td        306     0.00004
+   td      30162     0.00158
+    e                0.00054
+   bu      99792     0.00479
+   bu      54088     0.00170
+   bu      10392     0.00056
+    c                0.00063
+   td       1517     0.00033
+   td        240     0.00006
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
    td         46     0.00002
    td         13     0.00001
    td          1     0.00001
    td          0     0.00001
+<<<<<<< HEAD
 Trial Time:          0.00805
 Source:                 3424
     i                0.00041
@@ -90,10 +139,58 @@ Source:                54475
    bu       2238     0.00020
     c                0.00029
    td        362     0.00006
+=======
+Trial Time:          0.01142
+Source:                 3424
+    i                0.00060
+   td          2     0.00001
+   td       1538     0.00008
+   td      35165     0.00253
+    e                0.00064
+   bu      95117     0.00461
+   bu      51507     0.00171
+   bu      11304     0.00058
+   bu       1641     0.00033
+    c                0.00053
+   td        255     0.00006
+   td         48     0.00002
+   td         13     0.00001
+   td          0     0.00001
+Trial Time:          0.01221
+Source:                53228
+    i                0.00060
+   td          7     0.00001
+   td      14847     0.00090
+    e                0.00022
+   bu      83448     0.00602
+   bu      74768     0.00263
+   bu      19833     0.00082
+   bu       3121     0.00037
+    c                0.00054
+   td        467     0.00011
+   td         78     0.00003
+   td         20     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01277
+Source:                54475
+    i                0.00059
+   td          9     0.00001
+   td        134     0.00002
+   td      21107     0.00123
+    e                0.00034
+   bu      94268     0.00530
+   bu      64203     0.00206
+   bu      14183     0.00066
+   bu       2238     0.00035
+    c                0.00053
+   td        362     0.00008
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
    td         65     0.00002
    td         20     0.00001
    td          1     0.00001
    td          0     0.00001
+<<<<<<< HEAD
 Trial Time:          0.00798
 Source:                80385
     i                0.00040
@@ -114,10 +211,33 @@ Source:                80385
 Trial Time:          0.00911
 Source:               182281
     i                0.00040
+=======
+Trial Time:          0.01173
+Source:                80385
+    i                0.00060
+   td          3     0.00001
+   td        196     0.00003
+   td       4658     0.00039
+    e                0.00011
+   bu      64649     0.00666
+   bu      88631     0.00329
+   bu      31819     0.00104
+   bu       5721     0.00041
+    c                0.00057
+   td        771     0.00018
+   td        112     0.00003
+   td         29     0.00002
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01385
+Source:               182281
+    i                0.00060
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
    td          1     0.00001
    td          2     0.00001
    td         74     0.00002
    td       3875     0.00034
+<<<<<<< HEAD
     e                0.00004
    bu      73281     0.00418
    bu      86169     0.00199
@@ -277,10 +397,177 @@ Source:               156623
    bu       2762     0.00021
     c                0.00029
    td        410     0.00007
+=======
+    e                0.00008
+   bu      73281     0.00637
+   bu      86169     0.00305
+   bu      27775     0.00095
+   bu       4629     0.00040
+    c                0.00056
+   td        650     0.00015
+   td        107     0.00003
+   td         26     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01312
+Source:                46867
+    i                0.00061
+   td          7     0.00001
+   td       4037     0.00024
+    e                0.00007
+   bu      65750     0.00661
+   bu      91822     0.00334
+   bu      29246     0.00102
+   bu       4887     0.00041
+    c                0.00056
+   td        695     0.00016
+   td        116     0.00003
+   td         27     0.00001
+   td          3     0.00001
+   td          0     0.00001
+Trial Time:          0.01357
+Source:               101322
+    i                0.00060
+   td         32     0.00001
+   td        281     0.00003
+   td      11555     0.00058
+    e                0.00019
+   bu      73175     0.00604
+   bu      84986     0.00279
+   bu      22504     0.00084
+   bu       3500     0.00038
+    c                0.00055
+   td        462     0.00012
+   td         73     0.00003
+   td         20     0.00001
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.01269
+Source:               167256
+    i                0.00059
+   td          2     0.00001
+   td         11     0.00001
+   td         90     0.00002
+   td       7662     0.00047
+    e                0.00015
+   bu      79213     0.00608
+   bu      81576     0.00281
+   bu      23657     0.00086
+   bu       3725     0.00038
+    c                0.00055
+   td        533     0.00013
+   td         96     0.00003
+   td         24     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01263
+Source:                34554
+    i                0.00061
+   td         23     0.00002
+   td      15746     0.00099
+    e                0.00023
+   bu      84542     0.00590
+   bu      73346     0.00257
+   bu      19323     0.00080
+   bu       3056     0.00037
+    c                0.00054
+   td        457     0.00011
+   td         76     0.00002
+   td         20     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01267
+Source:                21915
+    i                0.00060
+   td          2     0.00001
+   td      10190     0.00043
+    e                0.00014
+   bu      70238     0.00631
+   bu      87495     0.00293
+   bu      24279     0.00089
+   bu       3795     0.00039
+    c                0.00055
+   td        493     0.00012
+   td         76     0.00003
+   td         20     0.00001
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.01291
+Source:               180954
+    i                0.00061
+   td          7     0.00001
+   td         20     0.00001
+   td        225     0.00003
+   td       7633     0.00045
+    e                0.00013
+   bu      74836     0.00630
+   bu      83541     0.00286
+   bu      25300     0.00091
+   bu       4294     0.00039
+    c                0.00056
+   td        604     0.00014
+   td        105     0.00003
+   td         21     0.00001
+   td          4     0.00001
+   td          0     0.00001
+Trial Time:          0.01297
+Source:               159319
+    i                0.00061
+   td          4     0.00001
+   td         39     0.00001
+   td      15317     0.00096
+    e                0.00024
+   bu      84719     0.00598
+   bu      73487     0.00256
+   bu      19417     0.00080
+   bu       3047     0.00036
+    c                0.00054
+   td        464     0.00011
+   td         75     0.00003
+   td         20     0.00001
+   td          1     0.00001
+   td          0     0.00001
+Trial Time:          0.01274
+Source:                19342
+    i                0.00060
+   td          2     0.00001
+   td      10186     0.00043
+    e                0.00016
+   bu      70205     0.00628
+   bu      87521     0.00292
+   bu      24290     0.00088
+   bu       3795     0.00039
+    c                0.00055
+   td        493     0.00013
+   td         76     0.00003
+   td         20     0.00001
+   td          2     0.00001
+   td          0     0.00001
+Trial Time:          0.01289
+Source:               156623
+    i                0.00061
+   td          1     0.00001
+   td          3     0.00001
+   td         33     0.00002
+   td      20375     0.00130
+    e                0.00030
+   bu      87145     0.00563
+   bu      68078     0.00235
+   bu      17689     0.00075
+   bu       2762     0.00036
+    c                0.00054
+   td        410     0.00010
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93
    td         73     0.00002
    td         20     0.00001
    td          1     0.00001
    td          0     0.00001
+<<<<<<< HEAD
 Trial Time:          0.00858
 Average Time:        0.00853
 Exiting @ tick 2035090752000 because exiting with last active thread context
+=======
+Trial Time:          0.01253
+Average Time:        0.01270
+Exiting @ tick 2176589649000 because exiting with last active thread context
+>>>>>>> 6be7a0502e78ebf80a09b838e3e9c0d652379c93

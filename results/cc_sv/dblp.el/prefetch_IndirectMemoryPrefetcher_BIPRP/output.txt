@@ -1,0 +1,51 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/cc_sv/dblp.el/prefetch_IndirectMemoryPrefetcher_BIPRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/cc_sv/dblp.el/prefetch_IndirectMemoryPrefetcher_BIPRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started Apr 28 2020 17:49:24
+gem5 executing on draco, pid 5379
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/cc_sv/dblp.el/prefetch_IndirectMemoryPrefetcher_BIPRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/cc_sv -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=IndirectMemoryPrefetcher --l2-replacement-policy=BIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( IndirectMemoryPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           0.99111
+Build Time:          0.20461
+Graph has 425957 nodes and 1049866 directed edges for degree: 2
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11917
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11905
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11904
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11910
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11908
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11909
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11907
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11908
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11903
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11906
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11904
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11905
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11907
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11902
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11906
+Shiloach-Vishkin took 4 iterations
+Trial Time:          0.11905
+Average Time:        0.11906
+Exiting @ tick 3183570764000 because exiting with last active thread context

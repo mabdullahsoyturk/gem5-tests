@@ -1,47 +1,50 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/cc/dblp.el/4kB/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/cc/dblp.el/4kB/error.txt
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Mar 27 2020 00:28:59
-gem5 started Apr 23 2020 03:21:33
-gem5 executing on muhammet, pid 894
-command line: /home/muhammet/Desktop/gem5/build/RISCV/gem5.fast -re --outdir=/home/muhammet/Desktop/gem5/results/cc/dblp.el/4kB --stdout-file=output.txt --stderr-file=error.txt /home/muhammet/Desktop/gem5/configs/example/my_se.py -c /home/muhammet/Desktop/gem5/gapbs/cc -o '-f /home/muhammet/Desktop/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started May  4 2020 02:21:51
+gem5 executing on draco, pid 29579
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/cc/dblp.el/4kB --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/cc -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
 
+info: Standard input is not a terminal, disabling listeners.
 Global frequency set at 1000000000000 ticks per second
 **** REAL SIMULATION ****
-Read Time:           1.00064
-Build Time:          0.12097
+Read Time:           0.99901
+Build Time:          0.20784
 Graph has 425957 nodes and 1049866 directed edges for degree: 2
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03955
+Trial Time:          0.06870
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03978
+Trial Time:          0.06883
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03971
+Trial Time:          0.06880
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03980
+Trial Time:          0.06882
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03980
+Trial Time:          0.06886
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03976
+Trial Time:          0.06885
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03977
+Trial Time:          0.06885
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03977
+Trial Time:          0.06884
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03980
+Trial Time:          0.06885
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03978
+Trial Time:          0.06885
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03973
+Trial Time:          0.06883
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03975
+Trial Time:          0.06884
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03979
+Trial Time:          0.06887
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03977
+Trial Time:          0.06884
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03973
+Trial Time:          0.06885
 Skipping largest intermediate component (ID: 0, approx. 31% of the graph)
-Trial Time:          0.03976
-Average Time:        0.03975
-Exiting @ tick 1809864001000 because exiting with last active thread context
+Trial Time:          0.06887
+Average Time:        0.06883
+Exiting @ tick 2395390234000 because exiting with last active thread context

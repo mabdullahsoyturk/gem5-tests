@@ -1,0 +1,99 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/bc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/bc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started Apr 26 2020 22:29:45
+gem5 executing on draco, pid 9575
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/bc/dblp.el/prefetch_DCPTPrefetcher_SecondChanceRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/bc -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/dblp.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=DCPTPrefetcher --l2-replacement-policy=SecondChanceRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( DCPTPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           1.05251
+Build Time:          0.20370
+Graph has 425957 nodes and 1049866 directed edges for degree: 2
+    a                0.00045
+source: 85136
+    b                0.00180
+    p                0.00062
+Trial Time:          0.00892
+    a                0.00045
+source: 174172
+    b                0.00080
+    p                0.00002
+Trial Time:          0.00732
+    a                0.00045
+source: 394951
+    b                0.00080
+    p                0.00002
+Trial Time:          0.00733
+    a                0.00045
+source: 101549
+    b                0.00081
+    p                0.00003
+Trial Time:          0.00734
+    a                0.00045
+source: 362397
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00731
+    a                0.00045
+source: 74869
+    b                0.00824
+    p                0.00416
+Trial Time:          0.01891
+    a                0.00046
+source: 330191
+    b                0.00080
+    p                0.00003
+Trial Time:          0.00735
+    a                0.00045
+source: 133608
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00732
+    a                0.00045
+source: 170715
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00732
+    a                0.00046
+source: 44340
+    b                0.00591
+    p                0.00288
+Trial Time:          0.01531
+    a                0.00045
+source: 221784
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00733
+    a                0.00045
+source: 88856
+    b                0.00100
+    p                0.00017
+Trial Time:          0.00768
+    a                0.00046
+source: 388999
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00733
+    a                0.00045
+source: 19623
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00732
+    a                0.00045
+source: 338711
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00731
+    a                0.00046
+source: 379423
+    b                0.00079
+    p                0.00002
+Trial Time:          0.00733
+Average Time:        0.00867
+Exiting @ tick 1477438751500 because exiting with last active thread context
