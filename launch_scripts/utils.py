@@ -4,18 +4,24 @@ import subprocess
 from shutil import rmtree
 import argparse
 
-kronecker_sizes = ["12","14","16"]
-# kronecker_sizes = ["2","4","6"]
-l2_sizes = ["4kB"]
-# l2_sizes = ["4kB", "16kB", "64kB", "256kB"]
-l2_write_buffers = ["4", "8", "12", "16"]
-l2_mshrs = ["16", "20", "24", "28"]
-l2_assocs = ["4", "8", "16", "32"]
-l2_prefecthers = ["TaggedPrefetcher", "DCPTPrefetcher", "IndirectMemoryPrefetcher", "SignaturePathPrefetcher"]
-l2_replacement_policies = ["SecondChanceRP", "BIPRP", "LIPRP", "BRRIPRP"]
-    
-WHERE_AM_I = os.path.dirname(os.path.realpath(__file__)) #  Absolute Path to *THIS* Script
-BENCH_BIN_DIR = WHERE_AM_I + '/gapbs'
+DYNAMIC_OPTIONS = {
+    'write_buffer': ["4", "8", "16"],
+    'mshr': ["4", "8", "16", "32"],
+    'assoc': ["4", "8", "16", "32"],
+    'prefetcher': ["TaggedPrefetcher", "DCPTPrefetcher", "IndirectMemoryPrefetcher", "SignaturePathPrefetcher"],
+    'replacement': ["SecondChanceRP", "BIPRP", "LIPRP", "BRRIPRP"]   
+}
+
+DYNAMIC_OPTION_COMMANDS = {
+    'write_buffer': '--l2_write_buffers=',
+    'mshr': '--l2_mshrs=',
+    'assoc': '--l2_assoc=',
+    'prefetcher': '--l2-hwp-type=',
+    'replacement': '--l2-replacement-policy='   
+}
+
+GEM5_HOME = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+BENCH_BIN_DIR = GEM5_HOME + '/gapbs'
 BENCH_GRAPH_DIR = BENCH_BIN_DIR + "/test/graphs/"
 
 BENCH_BINARY = {
@@ -28,7 +34,7 @@ BENCH_BINARY = {
     'tc' : os.path.abspath(BENCH_BIN_DIR + '/tc')
 }
 
-RESULTS_DIR = WHERE_AM_I + "/results"
+RESULTS_DIR = GEM5_HOME + "/results"
 BENCH_RESULTS_DIR = {
     'bc' : RESULTS_DIR + '/bc',
     'bfs': RESULTS_DIR + '/bfs',
@@ -39,7 +45,7 @@ BENCH_RESULTS_DIR = {
     'tc' : RESULTS_DIR + '/tc'
 }
 
-def compileBenchmarks():
+def compile_benchmarks():
     print("Compiling benchmarks")
     os.chdir(BENCH_BIN_DIR)        
 
@@ -48,9 +54,9 @@ def compileBenchmarks():
     except Exception as e:
         sys.exit(str(e))
 
-    os.chdir(WHERE_AM_I)
+    os.chdir(GEM5_HOME)
 
-def cleanBenchmarks():
+def clean_benchmarks():
     print("Cleaning benchmarks")
     os.chdir(BENCH_BIN_DIR)        
 
@@ -59,9 +65,9 @@ def cleanBenchmarks():
     except Exception as e:
         sys.exit(str(e))
         
-    os.chdir(WHERE_AM_I)
+    os.chdir(GEM5_HOME)
 
-def createResultDirectories(bench_name):
+def create_result_directories(bench_name):
     print("Creating result directories")
     if (not os.path.exists(RESULTS_DIR)):
         os.mkdir(RESULTS_DIR)
@@ -69,37 +75,12 @@ def createResultDirectories(bench_name):
     if (not os.path.exists(BENCH_RESULTS_DIR[bench_name])):
         os.mkdir(BENCH_RESULTS_DIR[bench_name])
 
-        for kronecker_size in kronecker_sizes:
-            if(not os.path.exists(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)):
-                os.mkdir(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)
-            
-            for l2_size in l2_sizes:
-                if(not os.path.exists(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size + "/" + l2_size)):
-                    os.mkdir(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size + "/" + l2_size)
-
-def removeResultDirectories(bench_name):
-    for kronecker_size in kronecker_sizes:
-        if (os.path.exists(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)):
-            print("Deleting output directory for kronecker size {}".format(kronecker_size))
-            rmtree(BENCH_RESULTS_DIR[bench_name] + "/" + kronecker_size)
-
-def getBinaryOptions(args, kronecker_size):
-    bench_binary_options = '"-f {}"'.format(BENCH_GRAPH_DIR + args.graph_name) if args.graph else '"-g {}"'.format(kronecker_size)
-    return bench_binary_options
-
-def getOtherOptions(args):
-    constants = "--caches --l2cache --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4"
-    mem_size = "--mem-size={}".format(args.mem_size)
-    l2_size = "--l2_size={}".format(args.l2_size)
-    l2_mshrs = "--l2_mshrs={}".format(args.l2_mshrs)
-    l2_write_buffers = "--l2_write_buffers={}".format(args.l2_write_buffers)
-
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--bench-name', help='Benchmark\'s name', default='pr')
     parser.add_argument("--caches", action="store_true", default=True)
     parser.add_argument("--l2cache", action="store_true", default=True)
-    parser.add_argument("--l2_size", default="64kB")
+    parser.add_argument("--l2_size", default="4kB")
     parser.add_argument("--l2_assoc", default="2")
     parser.add_argument("--l1i_write_buffers", default="8")
     parser.add_argument("--l1d_write_buffers", default="8")
@@ -109,7 +90,9 @@ def get_arguments():
     parser.add_argument("--l2_mshrs", default="20")
     parser.add_argument("--l2_replacement", default="BRRIPRP")
     parser.add_argument("--mem-size", default="512MB")
-    parser.add_argument("--graph", action="store_true", default=False)
+    parser.add_argument("--graph", action="store_true", default=True)
     parser.add_argument("--graph-name", default="4.mtx")
+    parser.add_argument("--static", action="store_true", default=False)
+    parser.add_argument('--dynamic-option-name', default="base")
 
     return parser.parse_args()
