@@ -1,11 +1,3 @@
-bc
-bfs
-cc
-converter
-pr
-sssp
-tc
-
 test/out/*.out
 
 benchmark/out/*.out
