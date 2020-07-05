@@ -102,9 +102,7 @@ void BenchmarkKernel(const CLApp &cli, const GraphT_ &g,
   g.PrintStats();
   double total_seconds = 0;
   Timer trial_timer;
-  for (int iter=0; iter < cli.num_trials(); iter++) {
-    trial_timer.Start();
-    int a,t,c;
+  int a,t,c;
   a = 5;
   t = 2;
 
@@ -114,14 +112,9 @@ void BenchmarkKernel(const CLApp &cli, const GraphT_ &g,
     : [z] "=r" (c)
     : [x] "r" (a), [y] "r" (t)
   );
+  for (int iter=0; iter < cli.num_trials(); iter++) {
+    trial_timer.Start();
     auto result = kernel(g);
-    asm volatile
-  (
-    "mod   %[z], %[x], %[y]\n\t"
-    : [z] "=r" (c)
-    : [x] "r" (a), [y] "r" (t)
-  );
-
     trial_timer.Stop();
     PrintTime("Trial Time", trial_timer.Seconds());
     total_seconds += trial_timer.Seconds();
@@ -135,6 +128,12 @@ void BenchmarkKernel(const CLApp &cli, const GraphT_ &g,
       PrintTime("Verification Time", trial_timer.Seconds());
     }
   }
+  asm volatile
+  (
+    "mod   %[z], %[x], %[y]\n\t"
+    : [z] "=r" (c)
+    : [x] "r" (a), [y] "r" (t)
+  );
   PrintTime("Average Time", total_seconds / cli.num_trials());
 }
 
