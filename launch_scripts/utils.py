@@ -78,7 +78,10 @@ def create_result_directories(bench_name):
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--bench-name', help='Benchmark\'s name', default='pr')
+    parser.add_argument("--num_cpus", default="4")
     parser.add_argument("--caches", action="store_true", default=True)
+    parser.add_argument("--l1i_size", default="2kB")
+    parser.add_argument("--l1d_size", default="2kB")
     parser.add_argument("--l2cache", action="store_true", default=True)
     parser.add_argument("--l2_size", default="4kB")
     parser.add_argument("--l2_assoc", default="2")
@@ -90,9 +93,7 @@ def get_arguments():
     parser.add_argument("--l2_mshrs", default="20")
     parser.add_argument("--l2_replacement", default="BRRIPRP")
     parser.add_argument("--mem-size", default="512MB")
-    parser.add_argument("--graph", action="store_true", default=True)
     parser.add_argument("--graph-name", default="4.mtx")
-    parser.add_argument("--static", action="store_true", default=False)
-    parser.add_argument('--dynamic-option-name', default="base")
+    parser.add_argument('--dynamic-option-name', default=None)
 
     return parser.parse_args()

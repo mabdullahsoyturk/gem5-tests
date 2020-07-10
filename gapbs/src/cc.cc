@@ -223,6 +223,9 @@ int main(int argc, char* argv[]) {
   Graph g = b.MakeGraph();
   auto CCBound = [](const Graph& gr){ return Afforest(gr); };
 
+  int a=1,t=1,c;
+  asm volatile("mod   %[z], %[x], %[y]\n\t" : [z] "=r" (c) : [x] "r" (a), [y] "r" (t));
   BenchmarkKernel(cli, g, CCBound, PrintCompStats, CCVerifier);
+  
   return 0;
 }

@@ -134,6 +134,9 @@ int main(int argc, char* argv[]) {
     return -2;
   }
   
+  int a=1,t=1,c;
+  asm volatile("mod   %[z], %[x], %[y]\n\t" : [z] "=r" (c) : [x] "r" (a), [y] "r" (t));
   BenchmarkKernel(cli, g, Hybrid, PrintTriangleStats, TCVerifier);
+  
   return 0;
 }

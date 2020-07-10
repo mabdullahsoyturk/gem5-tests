@@ -239,6 +239,9 @@ int main(int argc, char* argv[]) {
     return BCVerifier(g, vsp, cli.num_iters(), scores);
   };
 
+  int a=1,t=1,c;
+  asm volatile("mod   %[z], %[x], %[y]\n\t" : [z] "=r" (c) : [x] "r" (a), [y] "r" (t));
   BenchmarkKernel(cli, g, BCBound, PrintTopScores, VerifierBound);
+  
   return 0;
 }

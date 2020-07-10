@@ -156,6 +156,9 @@ int main(int argc, char* argv[]) {
     return -1;
   Builder b(cli);
   Graph g = b.MakeGraph();
+  int a=1,t=1,c;
+  asm volatile("mod   %[z], %[x], %[y]\n\t" : [z] "=r" (c) : [x] "r" (a), [y] "r" (t));
   BenchmarkKernel(cli, g, ShiloachVishkin, PrintCompStats, CCVerifier);
+  
   return 0;
 }

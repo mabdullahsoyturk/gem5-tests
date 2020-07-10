@@ -254,6 +254,9 @@ int main(int argc, char* argv[]) {
     return BFSVerifier(g, vsp.PickNext(), parent);
   };
   
+  int a=1,t=1,c;
+  asm volatile("mod   %[z], %[x], %[y]\n\t" : [z] "=r" (c) : [x] "r" (a), [y] "r" (t));
   BenchmarkKernel(cli, g, BFSBound, PrintBFSStats, VerifierBound);
+  
   return 0;
 }
