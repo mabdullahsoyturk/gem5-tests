@@ -44,4 +44,6 @@ Parameters that you can change:
 Example run for different prefetcher types:
 	python3 launch_scripts/launch.py --dynamic-option-name=prefetcher 
 
+You can find the summary of what we know so far in SUMMARY.md file.
+
 If you have questions, please send mail to muhammetabdullahsoyturk@gmail.com
