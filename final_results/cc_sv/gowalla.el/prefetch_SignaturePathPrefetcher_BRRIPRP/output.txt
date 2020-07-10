@@ -1,0 +1,51 @@
+Redirecting stdout to /vol1/msoyturk/gem5/results/cc_sv/gowalla.el/prefetch_SignaturePathPrefetcher_BRRIPRP/output.txt
+Redirecting stderr to /vol1/msoyturk/gem5/results/cc_sv/gowalla.el/prefetch_SignaturePathPrefetcher_BRRIPRP/error.txt
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 26 2020 13:32:47
+gem5 started Apr 29 2020 11:10:09
+gem5 executing on draco, pid 15689
+command line: /vol1/msoyturk/gem5/build/RISCV/gem5.fast -re --outdir=/vol1/msoyturk/gem5/results/cc_sv/gowalla.el/prefetch_SignaturePathPrefetcher_BRRIPRP --stdout-file=output.txt --stderr-file=error.txt /vol1/msoyturk/gem5/configs/example/my_se.py -c /vol1/msoyturk/gem5/gapbs/cc_sv -o '-f /vol1/msoyturk/gem5/gapbs/test/graphs/gowalla.el' --caches --l1d_size=2kB --l1i_size=2kB --cpu-type=DerivO3CPU -n 4 --mem-size=512MB --l2cache --l2_size=4kB --l2-hwp-type=SignaturePathPrefetcher --l2-replacement-policy=BRRIPRP --l1i_mshrs=4 --l1d_mshrs=4 --l2_mshrs=20 --l1i_write_buffers=8 --l1d_write_buffers=8 --l2_write_buffers=8
+
+info: Standard input is not a terminal, disabling listeners.
+Warning: l2-hwp-type is set ( SignaturePathPrefetcher ), but the current l2 has a default Hardware Prefetcher of type <class 'm5.params.NullSimObject'> , using the specified by the flag option.
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Read Time:           1.73028
+Build Time:          0.32873
+Graph has 196591 nodes and 1900654 directed edges for degree: 9
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06928
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06925
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06922
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06918
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06915
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06917
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06911
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06917
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06899
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06857
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06875
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06864
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06874
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06901
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06903
+Shiloach-Vishkin took 2 iterations
+Trial Time:          0.06900
+Average Time:        0.06902
+Exiting @ tick 3289683720000 because exiting with last active thread context
