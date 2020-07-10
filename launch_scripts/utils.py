@@ -67,17 +67,17 @@ def clean_benchmarks():
         
     os.chdir(GEM5_HOME)
 
-def create_result_directories(bench_name):
+def create_result_directories(app_name):
     print("Creating result directories")
     if (not os.path.exists(RESULTS_DIR)):
         os.mkdir(RESULTS_DIR)
 
-    if (not os.path.exists(BENCH_RESULTS_DIR[bench_name])):
-        os.mkdir(BENCH_RESULTS_DIR[bench_name])
+    if (not os.path.exists(BENCH_RESULTS_DIR[app_name])):
+        os.mkdir(BENCH_RESULTS_DIR[app_name])
 
 def get_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--bench-name', help='Benchmark\'s name', default='pr')
+    parser.add_argument('--app-name', help='Application\'s name', default='pr')
     parser.add_argument("--num_cpus", default="4")
     parser.add_argument("--caches", action="store_true", default=True)
     parser.add_argument("--l1i_size", default="2kB")

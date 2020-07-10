@@ -1,37 +1,51 @@
-This is the gem5 simulator.
-
 The main website can be found at http://www.gem5.org
 
 A good starting point is http://www.gem5.org/about, and for
 more information about building the simulator and getting started
-please see http://www.gem5.org/documentation and
+see http://www.gem5.org/documentation and
 http://www.gem5.org/documentation/learning_gem5/introduction.
 
 To build gem5, you will need the following software: g++ or clang,
-Python (gem5 links in the Python interpreter), SCons, SWIG, zlib, m4,
-and lastly protobuf if you want trace capture and playback
-support. Please see http://www.gem5.org/documentation/general_docs/building
-for more details concerning the minimum versions of the aforementioned tools.
+Python (gem5 links in the Python interpreter), SCons, SWIG, zlib, m4. 
+see http://www.gem5.org/documentation/general_docs/building
 
 Once you have all dependencies resolved, type 'scons
-build/<ARCH>/gem5.opt' where ARCH is one of ALPHA, ARM, NULL, MIPS,
+build/<ARCH>/gem5.opt' where ARCH is one of RISCV, ALPHA, ARM, NULL, MIPS,
 POWER, SPARC, or X86. This will build an optimized version of the gem5
 binary (gem5.opt) for the the specified architecture. See
 http://www.gem5.org/documentation/general_docs/building for more details and
 options.
 
-The basic source release includes these subdirectories:
-   - configs: example simulation configuration scripts
-   - ext: less-common external packages needed to build gem5
-   - src: source code of the gem5 simulator
-   - system: source for some optional system software for simulated systems
-   - tests: regression tests
-   - util: useful utility programs and files
+Directories you should look at:
+   - configs/gap_config: Here is the definition of our system.
+   - launch_scripts: This folder contains the script to execute a simulation.
+   - gapbs: This is the source code of the benchmark we use. Each application has a dummy "mod" inline assembly to reset the stats before the region of interest.
+   - slurm_scripts: If you use slurm workload manager on your hpc, you can find example slurm scripts in this folder.
 
-To run full-system simulations, you will need compiled system firmware
-(console and PALcode for Alpha), kernel binaries and one or more disk
-images.
+To run a simulation with default parameters: 
+	python3 launch_scripts/launch.py
 
-If you have questions, please send mail to gem5-users@gem5.org
+Parameters that you can change: 
+   --app-name: Name of the application to be simulated (bc, cc, cc_sv, pr, sssp or tc)
+   --num-cpus: Number of cpus
+   --caches: Indicates that the system has l1 caches. Required to use DerivO3CPU.
+   --l1i_size: Size of l1i cache.
+   --l1d_size: Size of l1d cache.
+   --l2cache: Indicates that the system has l2cache.
+   --l2_size: Size of l2 cache.
+   --l2_assoc: Associativity of l2 cache.
+   --l1i_write_buffers: Number of write buffers for l1i cache.
+   --l1d_write_buffers: Number of write buffers for l1d cache.
+   --l2_write_buffers: Number of write buffers for l2 cache.
+   --l1i_mshrs: Number of Miss Status Handling Registers for l1i cache. 
+   --l1d_mshrs: Number of Miss Status Handling Registers for l1d cache
+   --l2_mshrs: Number of Miss Status Handling Registers for l2 cache
+   --l2_replacement: Replacement policy of l2 cache.
+   --mem-size: Memory size
+   --graph-name: The graph that we give to the application as an input.
+   --dynamic-option-name: The option that is changed in each experiment. (write_buffer, mshr, assoc, prefetcher, replacement)
 
-Enjoy using gem5 and please share your modifications and extensions.
+Example run for different prefetcher types:
+	python3 launch_scripts/launch.py --dynamic-option-name=prefetcher 
+
+If you have questions, please send mail to muhammetabdullahsoyturk@gmail.com

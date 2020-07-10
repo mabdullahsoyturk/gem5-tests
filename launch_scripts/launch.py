@@ -9,7 +9,6 @@ GEM5_HOME = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
 BENCH_BIN_DIR = GEM5_HOME + '/gapbs'
 BENCH_GRAPH_DIR = BENCH_BIN_DIR + "/test/graphs/"
-BENCH_BIN_HOME = GEM5_HOME + '/gapbs'
 
 GEM5_BINARY = os.path.abspath(GEM5_HOME + '/build/RISCV/gem5.fast')
 GEM5_SCRIPT = os.path.abspath(GEM5_HOME + '/configs/gap_config/run.py')
@@ -38,16 +37,16 @@ class ExperimentManager:
         redirection = '-re'
         graph_name = self.args.graph_name
         if dynamic_option:
-            outdir = '--outdir={}/results/{}/{}/{}/{}'.format(GEM5_HOME, self.args.bench_name, graph_name, self.args.dynamic_option_name, dynamic_option)
+            outdir = '--outdir={}/results/{}/{}/{}/{}'.format(GEM5_HOME, self.args.app_name, graph_name, self.args.dynamic_option_name, dynamic_option)
         else:
-            outdir = '--outdir={}/results/{}/{}/base_result'.format(GEM5_HOME, self.args.bench_name, graph_name)
+            outdir = '--outdir={}/results/{}/{}/base_result'.format(GEM5_HOME, self.args.app_name, graph_name)
         stdout_file = '--stdout-file=output.txt'
         stderr_file = '--stderr-file=error.txt'
 
         return ' '.join([redirection, outdir, stdout_file, stderr_file])
 
     def get_benchmark_path(self):
-        return '-c ' + utils.BENCH_BINARY[self.args.bench_name]
+        return '-c ' + utils.BENCH_BINARY[self.args.app_name]
 
     def get_benchmark_options(self):
         benchmark_options = '-o "-f {}"'.format(BENCH_GRAPH_DIR + self.args.graph_name)
@@ -74,7 +73,7 @@ def run_experiment(dynamic_option, experiment_manager, args):
 
 if __name__ == "__main__":
     args = utils.get_arguments()
-    utils.create_result_directories(args.bench_name)
+    utils.create_result_directories(args.app_name)
 
     experiment_manager = ExperimentManager()
 

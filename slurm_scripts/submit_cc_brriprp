@@ -33,7 +33,8 @@
 
 echo "Running gem5 command..."
 date
-python3 prefetch_replace.py --graph --graph-name=dblp.el --bench-name=cc --l2_replacement=BRRIPRP
+echo "Runs CC application with dblp graph and Re-Reference Interval Prediction replacement policy."
+python3 launch.py --graph-name=dblp.el --app-name=cc --l2_replacement=BRRIPRP
 date
 RET=$?
 

@@ -1,11 +1,8 @@
 #!/bin/bash
 # 
-# CompecTA (c) 2016
-# 
-# PSIBLAST job submission script
+# Example job submission script
 #
 # TODO:
-#   - Set name of the job below changing "PSIBLAST" value.
 #   - Set the requested number of tasks (cpu cores) with --ntasks parameter.
 #   - Select the partition (queue) you want to run the job in:
 #     - short : For jobs that have maximum run time of 60 mins. Has higher priority.
@@ -33,7 +30,8 @@
 
 echo "Running gem5 command..."
 date
-python3 prefetch_replace.py --graph --graph-name=dblp.el --bench-name=bfs --l2_replacement=BIPRP
+echo "Runs BFS application with dblp graph and Bimodal Interval Prediction replacement policy."
+python3 launch.py --graph-name=dblp.el --app-name=bfs --l2_replacement=BIPRP
 date
 RET=$?
 
