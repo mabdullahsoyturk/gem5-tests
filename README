@@ -8,9 +8,12 @@ In order to compile GAP Benchmark Suite, you need to have RISCV Gnu Toolchain (h
 After you installed RISCV Gnu Toolchain you can just "make" the GAP Benchmark Suite in gapbs folder.
 
 Directories you should look at:
-   - configs/gap_config: Here is the definition of our system.
+   - configs/gap_config: Here is the definition of our system. If you want to change something in the system 
+   (cache hierarchy, parameters of cpu etc.) this is the part you should look at. 
    - launch_scripts: This folder contains the script to execute a simulation.
    - gapbs: This is the source code of the benchmark we use. Each application has a dummy "mod" inline assembly to reset the stats before the region of interest.
+   Normally you would do this with gem5 pseudo instructions but it is not available for RISCV at the moment. That's why I have implemented another instruction
+   that will dump and reset the statistics.
    - results: This folder is created after you run a simulation. You can find the results of the simulation in this folder.
    - final_results: These are the results of the experiments that I conducted. 
    - slurm_scripts: If you use slurm workload manager on your hpc, you can find example slurm scripts in this folder.
